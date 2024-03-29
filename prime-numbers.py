@@ -18,16 +18,16 @@ else:
 
 # With function
 
-def is_prime(num):
-    stop = int(num ** 0.5)
+def is_prime(f_num):
+    f_stop = int(f_num ** 0.5)
 
-    prime = True
+    f_prime = True
 
-    for i in range(2, stop):
-        if num % i == 0:
-            prime = False
+    for f_i in range(2, f_stop):
+        if f_num % f_i == 0:
+            f_prime = False
 
-    if prime:
+    if f_prime:
         print("Prime")
     else:
         print("Not prime")
