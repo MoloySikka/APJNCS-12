@@ -4,9 +4,11 @@ length = int(input("Enter length of the line: "))
 # without function
 print(char * length)
 
+
 # with function
-def character_line(char, length):
-  print(char * length)
+def character_line(f_char, f_length):
+    print(f_char * f_length)
+
 
 print()
 character_line(char, length)
