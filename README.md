@@ -2,7 +2,6 @@ This is a record and store of all python codes done during the session 2024-25 f
 
 Maintained by Moloy Sikka.
 
-Name - Date
 1. Prime number checker - 19/3/24
 2. Area of triangle - 19/3/24
 3. Grade - 19/3/24
