@@ -14,4 +14,4 @@ Maintained by Moloy Sikka.
 10. Modify a list - 21/3/24
 11. Reverse number - 1/4/24
 12. Place names from dictionary - 1/4/24
-14. Tuple with lengths of words - 1/4/24
+14. Tuple with lengths of words from sentence - 1/4/24
