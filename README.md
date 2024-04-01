@@ -6,7 +6,7 @@ Maintained by Moloy Sikka.
 2. Area of triangle - 19/3/24
 3. Grade - 19/3/24
 4. Line of characters - 19/3/24
-5. Rise reccomendation - 19/3/24
+5. Ride recommendations - 19/3/24
 6. Greeting - 19/3/24
 7. Box of characters - 20/3/24
 8. Table of a number - 20/3/24
