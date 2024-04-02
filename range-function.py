@@ -1,3 +1,6 @@
+# 21/3/24
+# AIM: WAP to simulate the range function
+
 # Without function
 
 r_start = int(input("Enter 'start' value: "))
