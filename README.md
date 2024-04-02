@@ -22,6 +22,6 @@ Maintained by Moloy Sikka.
 
 Disclaimer and Terms:
 
-The creator of this repository shall not be held responsible for anny errors or discrepancies in the codes provided.
+The creator of this repository shall not be held responsible for any errors or discrepancies in the codes provided.
 
 All disputes subject to my jurisdiction.
