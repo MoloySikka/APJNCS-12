@@ -1,4 +1,6 @@
 # 19/3/24
+# AIM: WAP to find area of a traingle
+
 a = int(input("Enter length of first side: "))
 b = int(input("Enter length of second side: "))
 c = int(input("Enter length of third side: "))
