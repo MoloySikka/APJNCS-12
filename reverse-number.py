@@ -1,3 +1,6 @@
+# 1/4/24
+# AIM: WAP to reverse a number
+
 # Without function
 num = 4321
 rev = 0
