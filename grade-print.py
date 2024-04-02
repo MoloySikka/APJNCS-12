@@ -1,8 +1,5 @@
-# A: >= 90%
-# B: 70 <= mks < 90
-# C: 50 <= mks < 70
-# D: 33 <= mks < 50
-# F: mks < 33
+# 19/3/24
+# AIM: WAP to give a student their grade after they enter their marks
 
 marks = int(input("Enter the student's marks (0-100): "))
 
