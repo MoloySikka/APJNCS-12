@@ -1,3 +1,6 @@
+# 19/3/24
+# AIM: WAP to check if a given number is prime
+
 num = int(input("Enter number to be checked: "))
 
 # Without function
