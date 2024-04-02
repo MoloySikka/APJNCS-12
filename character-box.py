@@ -1,3 +1,6 @@
+# 20/3/24
+# AIM: WAP to create a box with a given character
+
 character = input("Enter character with which you want to make the box: ")
 height = int(input("Enter height of box: "))
 length = int(input("Enter length of box: "))
