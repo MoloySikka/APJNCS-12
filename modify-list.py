@@ -1,6 +1,7 @@
 lst = eval(input("Enter a list: "))
 lis = lst.copy()
 
+# Without function
 for i in range(len(lst)):
     if lst[i] % 2:
         lst[i] -= 1
@@ -9,7 +10,7 @@ for i in range(len(lst)):
 
 print(lst)
 
-# With functions
+# With function
 def modify_list(l):
     for i in range(len(l)):
         if l[i] % 2:
