@@ -22,7 +22,7 @@ Maintained by Moloy Sikka.
 
 Disclaimer and Terms:
 
-These codes are provided under the condition that the variable names, function names et cetera will be edited by the users
+These codes are provided under the condition that the variable names, function names et cetera will be edited by the users, and no word of this shall reach You-Know-Who.
 
 The creator of this repository shall not be held responsible for any errors or discrepancies in the codes provided.
 
