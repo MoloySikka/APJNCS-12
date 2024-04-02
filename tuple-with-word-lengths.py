@@ -1,4 +1,5 @@
 # 1/4/24
+# AIM: WAP to create a tuple from a sentence in the form of a string, containing the lengths of the words
 
 # Without function
 
