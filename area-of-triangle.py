@@ -1,3 +1,4 @@
+# 19/3/24
 a = int(input("Enter length of first side: "))
 b = int(input("Enter length of second side: "))
 c = int(input("Enter length of third side: "))
