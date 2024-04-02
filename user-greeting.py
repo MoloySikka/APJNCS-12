@@ -1,3 +1,6 @@
+# 19/3/24
+# AIM: WAP to greet the use based on the time entered
+
 time = input("Enter the time (24 hour format e.g. 13:26): ")
 time_list = time.split(":")
 hours = int(time_list[0])
