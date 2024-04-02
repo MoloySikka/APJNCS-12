@@ -3,6 +3,7 @@ time_list = time.split(":")
 hours = int(time_list[0])
 minutes = int(time_list[1])
 
+# Without function
 if -1 < hours < 25 and -1 < minutes < 61:
     if hours < 12:
         print("Good morning!")
@@ -16,6 +17,7 @@ else:
     print("Invalid!")
 
 
+# Without function
 def greeting(f_hours, f_minutes):
     if -1 < f_hours < 25 and -1 < f_minutes < 61:
         if hours < 4:
