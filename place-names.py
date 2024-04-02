@@ -1,4 +1,5 @@
 # 1/4/24
+# AIM: WAP to take place names from a given dictionary and print names which have more than 5 letters converted to uppercase
 
 # Without function
 
