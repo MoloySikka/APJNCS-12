@@ -15,3 +15,9 @@ Maintained by Moloy Sikka.
 12. Reverse number - 1/4/24
 13. Place names from dictionary - 1/4/24
 14. Tuple with lengths of words from sentence - 1/4/24
+15.  Calculator - 2/4/24
+
+
+Disclaimer and Terms:
+The creator of this repository shall not be held responsible for anny errors or discrepancies in the codes provided.
+All disputes subject to XII - A jurisdiction ONLY.
