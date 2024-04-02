@@ -1,3 +1,6 @@
+# 20/3/24
+# AIM: WAP to print till nth multiple of a given number
+
 num = int(input("Enter number: "))
 n = int(input("Enter no. of multiples: "))
 
