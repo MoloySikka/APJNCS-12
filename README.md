@@ -1,4 +1,4 @@
-This is a record and store of all python codes done during the session 2024-25 by class XII - A in the subject of CS.
+This is a record and store of all python codes done during the session 2024-25 by class XII - A in the subject of CS, which will be updated regularly.
 
 Maintained by Moloy Sikka.
 
