@@ -6,6 +6,7 @@
 
 marks = int(input("Enter the student's marks (0-100): "))
 
+# Without function
 if marks < 0 or marks > 100:
     print("Invalid marks. Please enter a value between 0 and 100.")
 else:
@@ -22,7 +23,7 @@ else:
 
     print(f"The student's grade is: {grade}")
 
-
+# With function
 def get_grade(f_marks):
     if f_marks >= 90:
         return "A"
