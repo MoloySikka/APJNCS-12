@@ -17,6 +17,7 @@ while i < r_stop:
 
 print()
 
+
 # With function
 def my_range(start=0, stop=0, step=1):
     if start != 0 and stop == 0 and step == 1:
@@ -36,6 +37,5 @@ def my_range(start=0, stop=0, step=1):
 r_start = int(input("Enter 'start' value: "))
 r_stop = int(input("Enter 'stop' value: "))
 r_step = int(input("Enter 'step' value: "))
-
 
 print(my_range(r_start, r_stop, r_step))
