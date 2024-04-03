@@ -9,7 +9,7 @@ r_step = int(input("Enter 'step' value: "))
 
 range_list = []
 
-i = 1
+i = 0
 
 while i < r_stop:
     range_list.append(i)
