@@ -20,7 +20,7 @@ else:
     print("Invalid!")
 
 
-# Without function
+# With function
 def greeting(f_hours, f_minutes):
     if -1 < f_hours < 25 and -1 < f_minutes < 61:
         if hours < 4:
