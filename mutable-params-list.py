@@ -1,4 +1,4 @@
-# 18/4/24
+# 19/4/24
 # AIM: WAP to demonstrate the mutability of a parameter when a list is passed in.
 
 def calc(a):
