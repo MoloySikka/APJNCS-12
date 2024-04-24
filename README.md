@@ -15,7 +15,11 @@ Maintained by Moloy Sikka.
 12. Reverse number - 1/4/24
 13. Place names from dictionary - 1/4/24
 14. Tuple with lengths of words from sentence - 1/4/24
-15.  Calculator - 2/4/24
+15. Calculator - 2/4/24
+16. Immutability of int literals as params - 18/4/24
+17. Mutability of list literal as param - 18/4/24
+18. Immutablility of tuple literal as param - 18/4/24
+19. Mutability of dict literal as param - 18/4/24
 
 
 
@@ -26,4 +30,4 @@ These codes are provided under the condition that the variable names, function n
 
 The creator of this repository shall not be held responsible for any errors or discrepancies in the codes provided.
 
-All disputes subject to my jurisdiction.
+All disputes subject to my jurisdiction ONLY.
