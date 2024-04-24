@@ -18,6 +18,7 @@ def describe_movie(**kwargs):
 # Example usage
 total_product = product(2, 3, 4)
 print("Product of numbers:", total_product)
+print()
 
 movie_description = describe_movie(title="Inception", director="Christopher Nolan", year=2010, genre="Science Fiction")
 print("Movie description:\n", movie_description, sep="")
