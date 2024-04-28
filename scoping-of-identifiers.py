@@ -1,3 +1,6 @@
+# 24/4/24
+# AIM: WAP to demonstrate the LEGB rule for scoping of Python identifiers.
+
 # 1 : id defined at local, enclosing, global and builtin levels.
 print("\n1 : id defined at local, enclosing, global and builtin levels.\n")
 id = 25
