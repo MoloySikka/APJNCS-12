@@ -9,7 +9,7 @@ print(f"Global: {id}")
 
 
 def outer():
-    id = 25
+    id = 35
     print(f"Enclosing: {id}")
 
     def inner():
@@ -32,7 +32,7 @@ print(f"Global: {id}")
 
 
 def outer():
-    id = 25
+    id = 35
     print(f"Enclosing: {id}")
 
     def inner():
@@ -55,7 +55,7 @@ print(f"Global: {id}")
 
 
 def outer():
-    # id = 25
+    # id = 35
     print(f"Enclosing: {id}")
 
     def inner():
@@ -78,7 +78,7 @@ print(f"Global: {id}")
 
 
 def outer():
-    # id = 25
+    # id = 35
     print(f"Enclosing: {id}")
 
     def inner():
