@@ -5,19 +5,19 @@ id = 25
 print(f"Global: {id}")
 
 
-def outer_1():
+def outer():
     id = 25
     print(f"Enclosing: {id}")
 
-    def inner_1():
+    def inner():
         id = 45
         print(f"Local: {id}")
 
-    inner_1()
+    inner()
     print(f"Enclosing: {id}")
 
 
-outer_1()
+outer()
 print(f"Global: {id}")
 del id
 
@@ -28,19 +28,19 @@ id = 25
 print(f"Global: {id}")
 
 
-def outer_1():
+def outer():
     id = 25
     print(f"Enclosing: {id}")
 
-    def inner_1():
+    def inner():
         # id = 45
         print(f"Local: {id}")
 
-    inner_1()
+    inner()
     print(f"Enclosing: {id}")
 
 
-outer_1()
+outer()
 print(f"Global: {id}")
 del id
 
@@ -51,19 +51,19 @@ id = 25
 print(f"Global: {id}")
 
 
-def outer_1():
+def outer():
     # id = 25
     print(f"Enclosing: {id}")
 
-    def inner_1():
+    def inner():
         # id = 45
         print(f"Local: {id}")
 
-    inner_1()
+    inner()
     print(f"Enclosing: {id}")
 
 
-outer_1()
+outer()
 print(f"Global: {id}")
 del id
 
@@ -74,17 +74,17 @@ print("\n4 : id defined at builtin level.\n")
 print(f"Global: {id}")
 
 
-def outer_1():
+def outer():
     # id = 25
     print(f"Enclosing: {id}")
 
-    def inner_1():
+    def inner():
         # id = 45
         print(f"Local: {id}")
 
-    inner_1()
+    inner()
     print(f"Enclosing: {id}")
 
 
-outer_1()
+outer()
 print(f"Global: {id}")
