@@ -74,4 +74,3 @@ mysql> select * from stud where r_no = 2;
 |    2 | Hermione Potter | 2017-08-15 | 1234567980 |
 +------+-----------------+------------+------------+
 1 row in set (0.00 sec)
-
