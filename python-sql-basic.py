@@ -11,8 +11,9 @@ db1 = mysql.connector.connect(
 
 cursor = db1.cursor()
 
-cursor.execute('select * from stud;')
+cursor.execute('select * from stud')
 r = cursor.fetchall()
 
 for i in r:
-    print(f'R.no: {i[0]} | Name: {i[1].ljust(20, '_')} | Date of Birth: {i[2].day}/{i[2].month}/{i[2].year} | Phone no: {i[3]}')
+    print(f'R.no: {i[0]} | Name: {i[1].ljust(20, '_')} | '
+          f'Date of Birth: {i[2].day}/{i[2].month}/{i[2].year} | Phone no: {i[3]}')
