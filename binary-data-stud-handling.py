@@ -79,6 +79,9 @@ def search_rno():
         print('No Records found')
     f.close()
 
+def update_record():
+    tryr_no = 
+
 
 def run():
     """Main menu driven program"""
