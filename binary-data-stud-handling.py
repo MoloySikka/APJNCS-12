@@ -4,18 +4,20 @@
 
 import pickle
 
-menu_prompt = """\nDo you want to:
+MENU = """\nDo you want to:
 1) Input student data.
 2) View student data.
 3) Search with roll no.
 0) Exit
 Enter your choice: """
 
+FILE = "C:/Users/Admin/Desktop/students.dat"
+
 
 def write_marks(marks_dict):
     try:
 
-        with open("C:/Users/Admin/Desktop/students.dat", 'rb') as data:
+        with open(FILE, 'rb') as data:
             try:
                 stud_data = pickle.load(data)
             except EOFError:
@@ -26,7 +28,7 @@ def write_marks(marks_dict):
 
     stud_data.append(marks_dict)
 
-    with open("C:/Users/Admin/Desktop/students.dat", 'wb') as data:
+    with open(FILE, 'wb') as data:
         pickle.dump(stud_data, data)
 
 
@@ -55,13 +57,14 @@ def show_data():
     """Loads all data from file1"""
     print(f'| Roll no. |{'Name'.center(20)}| Marks |')
     print("-" * 41)
-    with open("C:/Users/Admin/Desktop/students.dat", 'rb') as data:
+    with open(FILE, 'rb') as data:
         stud_data = pickle.load(data)
         for stud in stud_data:
             print(f'|{str(stud['R_no']).center(10)}|{stud['Name'].center(20)}|{str(stud['Marks']).center(7)}|')
 
 
 def search_rno():
+    """Search for roll number and show corresponding record."""
     f = open('C:/Users/Admin/Desktop/students.dat', 'rb')
     flag = False
     print()
@@ -79,14 +82,39 @@ def search_rno():
         print('No Records found')
     f.close()
 
+
 def update_record():
-    tryr_no = 
+    """Search for roll number and update corresponding record."""
+    try:
+        r_no = int(input('Enter the roll number for which the record has to be updated'))
+    except ValueError:
+        print('Invalid!')
+        update_record()
+        return
+
+    with open(FILE, 'rb+') as data:
+        stud_data = pickle.load(data)
+        for stud in stud_data:
+            if stud['R_no'] == r_no:
+                name = input('Enter changed name (leave empty for unchanged): ')
+                marks = input('Enter changed marks (leave empty for unchanged): ')
+
+                if not marks.isdigit() and marks:
+                    print('Invalid!')
+                    update_record()
+                    return
+
+                if name:
+                    stud['Name'] = name
+
+                if marks:
+                    stud['Marks'] = marks
 
 
 def run():
     """Main menu driven program"""
     try:
-        ch = int(input(menu_prompt))
+        ch = int(input(MENU))
     except ValueError:
         print("Invalid")
         run()
