@@ -1,5 +1,6 @@
 # 24/5/24
 # AIM: To create a menu-driven student marks management system using binary file handling.
+# Incomplete
 
 import pickle
 
