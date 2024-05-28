@@ -155,7 +155,7 @@ def delete_record():
 
             print(f'\n| Roll no. |{'Name'.center(20)}| Marks |')
             print("-" * 41)
-            print(f'\n{str(stud_data[stud]['R_no']).center(10)}|{stud_data[stud]['Name'].center(20)}|'
+            print(f'{str(stud_data[stud]['R_no']).center(10)}|{stud_data[stud]['Name'].center(20)}|'
                   f'{str(stud_data[stud]['Marks']).center(7)}')
 
             while True:
@@ -169,6 +169,10 @@ def delete_record():
                     break
                 else:
                     print('Invalid!')
+
+            with open(FILE, 'wb') as data:
+                pickle.dump(stud_data, data)
+
             break
 
     if not flag:
