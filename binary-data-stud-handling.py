@@ -138,6 +138,7 @@ def update_record():
 
 
 def delete_record():
+    """Delete a specified record."""
     try:
         r_no = int(input('Enter roll number for which you wish to delete the record: '))
     except ValueError:
