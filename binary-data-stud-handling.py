@@ -128,8 +128,10 @@ def update_record():
         with open(FILE, 'wb') as data:
             pickle.dump(stud_data, data)
 
-        print(f'\nUpdated values: {str(stud_data[stud]['R_no']).center(10)}|{stud_data[stud]['Name'].center(20)}|'
-              f'{str(stud_data[stud]['Marks']).center(7)}')
+        print(f'\n| Roll no. |{'Name'.center(20)}| Marks |')
+        print("-" * 41)
+        print(f'|{str(stud_data[stud]['R_no']).center(10)}|{stud_data[stud]['Name'].center(20)}|'
+              f'{str(stud_data[stud]['Marks']).center(7)}|')
 
     else:
         print("That roll number was not found in the given data.")
@@ -155,8 +157,8 @@ def delete_record():
 
             print(f'\n| Roll no. |{'Name'.center(20)}| Marks |')
             print("-" * 41)
-            print(f'{str(stud_data[stud]['R_no']).center(10)}|{stud_data[stud]['Name'].center(20)}|'
-                  f'{str(stud_data[stud]['Marks']).center(7)}')
+            print(f'|{str(stud_data[stud]['R_no']).center(10)}|{stud_data[stud]['Name'].center(20)}|'
+                  f'{str(stud_data[stud]['Marks']).center(7)}|')
 
             while True:
                 ch = input('\nAre you sure you wish to delete the record above? (y/n): ').lower()
@@ -181,46 +183,34 @@ def delete_record():
 
 def run():
     """Main menu driven program."""
-    try:
-        ch = int(input(MENU))
-    except ValueError:
-        print("Invalid")
-        run()
-        return
+    while True:
+        try:
+            ch = int(input(MENU))
+        except ValueError:
+            print("Invalid")
+            continue
 
-    if ch == 1:
-        input_marks()
-        run()
-        return
+        if ch == 1:
+            input_marks()
 
-    elif ch == 2:
-        show_data()
-        run()
-        return
+        elif ch == 2:
+            show_data()
 
-    elif ch == 3:
-        search_rno()
-        run()
-        return
+        elif ch == 3:
+            search_rno()
 
-    elif ch == 4:
-        update_record()
-        run()
-        return
+        elif ch == 4:
+            update_record()
 
-    elif ch == 5:
-        delete_record()
-        run()
-        return
+        elif ch == 5:
+            delete_record()
 
-    elif ch == 0:
-        print("Thank you for using my program.")
-        return
+        elif ch == 0:
+            print("Thank you for using my program.")
+            return
 
-    else:
-        print("Invalid")
-        run()
-        return
+        else:
+            print("Invalid")
 
 
 run()
