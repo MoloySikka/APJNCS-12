@@ -9,6 +9,7 @@ MENU = """\nDo you want to:
 2) View student data.
 3) Search with roll no.
 4) Update a record.
+5) Delete a record.
 0) Exit.
 Enter your choice: """
 
@@ -200,6 +201,11 @@ def run():
 
     elif ch == 4:
         update_record()
+        run()
+        return
+
+    elif ch == 5:
+        delete_record()
         run()
         return
 
