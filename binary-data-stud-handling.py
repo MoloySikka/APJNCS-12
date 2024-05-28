@@ -100,6 +100,7 @@ def update_record():
         stud_data = pickle.load(data)
 
     flag = False
+    stud = None
 
     for stud in range(len(stud_data)):
         if stud_data[stud]['R_no'] == r_no:
@@ -131,6 +132,46 @@ def update_record():
 
     else:
         print("That roll number was not found in the given data.")
+
+
+def delete_record():
+    try:
+        r_no = int(input('Enter roll number for which you wish to delete the record: '))
+    except ValueError:
+        print('Invalid!')
+        delete_record()
+        return
+
+    with open(FILE, 'rb') as data:
+        stud_data = pickle.load(data)
+
+    flag = False
+
+    for stud in range(len(stud_data)):
+        if stud_data[stud]['R_no'] == r_no:
+
+            flag = True
+
+            print(f'\n| Roll no. |{'Name'.center(20)}| Marks |')
+            print("-" * 41)
+            print(f'\n{str(stud_data[stud]['R_no']).center(10)}|{stud_data[stud]['Name'].center(20)}|'
+                  f'{str(stud_data[stud]['Marks']).center(7)}')
+
+            while True:
+                ch = input('\nAre you sure you wish to delete the record above? (y/n): ').lower()
+                if ch == 'y':
+                    stud_data.pop(stud)
+                    print('\nRemoved')
+                    break
+                elif ch == 'n':
+                    print('Deletion cancelled')
+                    break
+                else:
+                    print('Invalid!')
+            break
+
+    if not flag:
+        print('No record found')
 
 
 def run():
