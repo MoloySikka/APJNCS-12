@@ -55,7 +55,7 @@ def input_marks():
 
 
 def show_data():
-    """Loads all data from file1"""
+    """Loads all data from file."""
     print(f'\n| Roll no. |{'Name'.center(20)}| Marks |')
     print("-" * 41)
     try:
@@ -134,7 +134,7 @@ def update_record():
 
 
 def run():
-    """Main menu driven program"""
+    """Main menu driven program."""
     try:
         ch = int(input(MENU))
     except ValueError:
