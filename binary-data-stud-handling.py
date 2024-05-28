@@ -8,7 +8,8 @@ MENU = """\nDo you want to:
 1) Input student data.
 2) View student data.
 3) Search with roll no.
-0) Exit
+4) Update a record.
+0) Exit.
 Enter your choice: """
 
 FILE = "C:/Users/Admin/Desktop/students.dat"
@@ -55,12 +56,15 @@ def input_marks():
 
 def show_data():
     """Loads all data from file1"""
-    print(f'| Roll no. |{'Name'.center(20)}| Marks |')
+    print(f'\n| Roll no. |{'Name'.center(20)}| Marks |')
     print("-" * 41)
-    with open(FILE, 'rb') as data:
-        stud_data = pickle.load(data)
-        for stud in stud_data:
-            print(f'|{str(stud['R_no']).center(10)}|{stud['Name'].center(20)}|{str(stud['Marks']).center(7)}|')
+    try:
+        with open(FILE, 'rb') as data:
+            stud_data = pickle.load(data)
+            for stud in stud_data:
+                print(f'|{str(stud['R_no']).center(10)}|{stud['Name'].center(20)}|{str(stud['Marks']).center(7)}|')
+    except FileNotFoundError:
+        print("No data found!")
 
 
 def search_rno():
@@ -86,29 +90,47 @@ def search_rno():
 def update_record():
     """Search for roll number and update corresponding record."""
     try:
-        r_no = int(input('Enter the roll number for which the record has to be updated'))
+        r_no = int(input('\nEnter the roll number for which the record has to be updated: '))
     except ValueError:
         print('Invalid!')
         update_record()
         return
 
-    with open(FILE, 'rb+') as data:
+    with open(FILE, 'rb') as data:
         stud_data = pickle.load(data)
-        for stud in stud_data:
-            if stud['R_no'] == r_no:
-                name = input('Enter changed name (leave empty for unchanged): ')
-                marks = input('Enter changed marks (leave empty for unchanged): ')
 
-                if not marks.isdigit() and marks:
-                    print('Invalid!')
-                    update_record()
-                    return
+    flag = False
 
-                if name:
-                    stud['Name'] = name
+    for stud in range(len(stud_data)):
+        if stud_data[stud]['R_no'] == r_no:
+            flag = True
+            print()
+            name = input('Enter changed name (leave empty for unchanged): ')
+            marks = input('Enter changed marks (leave empty for unchanged): ')
 
-                if marks:
-                    stud['Marks'] = marks
+            if not marks.isdigit() and marks:
+                print('Invalid!')
+                update_record()
+                return
+
+            if name:
+                stud_data[stud]['Name'] = name
+
+            if marks:
+                stud_data[stud]['Marks'] = marks
+
+            break
+
+    if flag:
+
+        with open(FILE, 'wb') as data:
+            pickle.dump(stud_data, data)
+
+        print(f'\nUpdated values: {str(stud_data[stud]['R_no']).center(10)}|{stud_data[stud]['Name'].center(20)}|'
+              f'{str(stud_data[stud]['Marks']).center(7)}')
+
+    else:
+        print("That roll number was not found in the given data.")
 
 
 def run():
@@ -132,6 +154,11 @@ def run():
 
     elif ch == 3:
         search_rno()
+        run()
+        return
+
+    elif ch == 4:
+        update_record()
         run()
         return
 
