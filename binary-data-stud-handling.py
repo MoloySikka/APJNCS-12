@@ -12,7 +12,7 @@ MENU = """\nDo you want to:
 0) Exit.
 Enter your choice: """
 
-FILE = "C:/Users/Admin/Desktop/students.dat"
+FILE = "students.dat"
 
 
 def write_marks(marks_dict):
