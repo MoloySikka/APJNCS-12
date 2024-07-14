@@ -36,5 +36,5 @@ def copy_data():
 
     print(f'No. of records: {len(basket_dat)}')
 
-copy_data()
 
+copy_data()
