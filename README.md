@@ -22,9 +22,12 @@ Maintained by Moloy Sikka.
 18. Mutability of dict literal as param - 19/4/24
 19. *args and **kwargs - 23/4/24
 20. Scope of Identifiers - 24/4/24
-
-(More to be added to this list that have been added to the repo)
-
+21. Try...except...else...finally block -
+22. Basic MySQL queries -
+23. Stock Management (only in stick file) - 
+24. Students' Marks Handling (only in stick file) -
+25. Database Handling Revision -
+26. Binary File Handling Revision -
 
 
 Disclaimer and Terms:
