@@ -1,3 +1,6 @@
+# 24/04/2024
+# AIM: Use python-SQL connectivity to print all the records in a table from a database.
+
 import mysql.connector
 
 db1 = mysql.connector.connect(
