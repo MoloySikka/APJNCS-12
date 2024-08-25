@@ -1,3 +1,6 @@
+# 22/05/2024
+# AIM: To create a python connect sql server for management of a store.
+
 import mysql.connector as sql_con
 
 con = sql_con.connect(
