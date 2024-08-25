@@ -1,3 +1,6 @@
+# 17/07/2024
+# AIM: WAP to pickle sports data into 'sports.dat', extract basketball-related records to 'basket.dat', and count them.
+
 import pickle
 
 data = [
