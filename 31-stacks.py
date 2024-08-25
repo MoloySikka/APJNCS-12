@@ -1,5 +1,5 @@
 # 21/8/24
-# AIM: To demonstrate the basic operations of a stack, implemented using a # Python list.
+# AIM: To demonstrate the basic operations of a stack, implemented using a Python list.
 
 mystack = []
 
