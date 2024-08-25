@@ -31,7 +31,7 @@ Maintained by Moloy Sikka, CODE President frfr.
 27. Binary File Handling Revision - 17/07/24
 28. COUNT MySQL function - 5/8/24
 29. MySQL Worksheet - 12/8/24
-30. Textfile handling - 20/08/24
+30. Textfile handling (only in stick file) - 20/08/24
 31. Stack implementation - 21/8/24
 32. Seek and Tell functions - 23/8/24
 
