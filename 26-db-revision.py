@@ -1,3 +1,6 @@
+# 10/07/2024
+# AIM: WAP To create a database named 'company' with a table named 'project', add three records, and increase the number of people by 2 in all projects.
+
 import mysql.connector as db
 
 con = db.connect(
