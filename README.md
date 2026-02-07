@@ -1,6 +1,8 @@
 This is a record and store of all python codes done during the session 2024-25 by class XII - A in the subject of CS, which will be updated regularly.
 
-Maintained by Moloy Sikka, CODE President frfr.
+*May be outdated*
+
+Previously maintained by Moloy Sikka, CODE President frfr.
 
 1. Prime number checker - 19/3/24
 2. Area of triangle - 19/3/24
